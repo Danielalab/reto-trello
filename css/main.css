@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+.diplay {
+  display: none;
+}
+
 /*header*/
 
 header {
@@ -41,6 +45,10 @@ header ul li{
   margin: 0.3% .15%;
   vertical-align: middle;
 }
+
+header ul li:hover {
+  background-color: #3385B5;
+}  
 
 header ul li a{
   vertical-align: middle;
@@ -67,7 +75,7 @@ header ul li a{
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   padding: 1%;
   width: 100%;
 }
@@ -94,4 +102,199 @@ header ul li a{
 
 #user a {
   font-size:30px; 
+}
+
+/* NAV OPTIONAL*/
+
+#diverse-options {
+  margin: 1vh 1.5%;
+}
+
+#diverse-options>ul>li{
+  padding: .5% .8%; 
+}
+
+#diverse-options>ul>li:hover {
+  background-color: #0067A2;
+  border-radius: 5px
+}
+
+#board-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rigth {
+  float: right;
+  font-size: 15px;
+}
+
+/*  add list */
+
+.add-list {
+  background-color: #0067A2;
+  border-radius: 4px;
+  display : inline-block;
+  margin: 0 1%;
+  padding: .8vh .6%;
+  width: 20%;
+}
+
+.add-list>form {
+  padding: .8vh 2%;
+}  
+
+.add-list>form>input {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  outline: none;
+} 
+
+.add-list>form>input::placeholder {
+  color: #98d7f8;
+}
+
+.add-list:hover {
+  background-color: #005485;
+} 
+
+.add-list>div {
+  display: none;
+  margin-top: 2%;
+}
+
+.add-list>div>button {
+  background: #5AAC44;
+  box-shadow: 0 1px 0 #519839;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+  margin-right: 3% ;
+  padding: .9vh 5%;
+}
+
+.add-list>div>span {
+  color: #a8a8a8;
+  cursor: pointer;
+  font-size: 26px;
+  vertical-align: middle;
+}
+
+.add-list>div>span:hover {
+  color: grey;
+}  
+
+/* style javascript */
+
+.more-options {
+  background-color: #E2E4E6; 
+}
+
+.more-options:hover {
+  background-color: #E2E4E6;
+}  
+
+.more-options>form {
+  background: rgba(0,0,0,.05);
+  border-color: #aaa;
+  box-shadow: inset 0 1px 8px rgba(0,0,0,.15);
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+}
+
+.more-options>form>input:focus{
+  background-color: transparent !important;
+}
+
+.more-options>form>input::placeholder {
+  color: #888787;
+}
+
+.more-options>div {
+  display: block;
+}
+
+.add-list>.create-list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3% 5%;
+}
+
+.add-list>.create-list>span  {
+  color: #000000;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+.add-list>.create-list>a {
+  color: #969696;
+  display: inline-block;
+  font-size: 14px;
+  padding: 4% 0;
+  width: 100%;
+}
+
+.add-list>.create-list>a:hover {
+  color: #464646;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#add-card {
+  padding: 0 5%;
+}  
+
+#add-card:hover {
+  background-color: #cfcfcf;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.more-options>form.style-write-card {
+  background: #E2E4E6;
+  border: none;
+  box-shadow: none;
+}
+
+.more-options>form.style-write-card>textarea {
+  border: 1px solid #f1f1f1;
+  border-bottom-color: #c4c3c3; 
+  border-radius: 5px;
+  font-size: 14px; 
+  min-height: 54px;
+  padding: 3% 2%;
+  overflow: hidden;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.more-options>.style-div {
+  margin: 0;
+  padding: 0 4%;
+  padding-bottom: 1vh;
+}
+
+.add-list>.style-card-container {
+  margin-top: 0;
+  margin-bottom: .5vh; 
+  padding: 0 1%;
+}
+
+.style-card-container p {
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-bottom-color: #c4c3c3; 
+  border-radius: 4px;
+  font-size: 13px;
+  margin: 0 2%;
+  overflow: hidden;
+  padding: .8vh 2%;
 }
